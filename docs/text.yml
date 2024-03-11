@@ -1,0 +1,18 @@
+swagger: "2.0"
+info:
+  title: "Text API"
+  description: "API endpoint to retrieve original text"
+  version: "1.0.0"
+paths:
+  /text:
+    get:
+      summary: "Get original text"
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            type: "object"
+            properties:
+              text:
+                type: "string"
+                example: "Halo, apa kabar semua?"

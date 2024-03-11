@@ -1,0 +1,18 @@
+swagger: "2.0"
+info:
+  title: "Text Clean API"
+  description: "API endpoint to retrieve cleaned text"
+  version: "1.0.0"
+paths:
+  /text-clean:
+    get:
+      summary: "Get cleaned text"
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            type: "object"
+            properties:
+              cleaned_text:
+                type: "string"
+                example: "Halo, apa kabar semua?"
